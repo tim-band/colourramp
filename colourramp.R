@@ -104,3 +104,22 @@ colour_ramp <- function(
     c(vapply(rgb_results, rgbv, ""), last_colour)
   }
 }
+
+colour_iridesce <- colour_ramp(
+  list("black", "dark magenta", "dark blue", "green", "yellow"),
+  collapse_red_green = TRUE
+)
+
+colour_salmon <- colour_ramp(
+  list("black", "red", "pink"),
+  collapse_red_green = TRUE
+)
+
+colour_rainbow_plus <- colour_ramp(
+  list("black", "red", "yellow", "green", "blue", "magenta")
+)
+
+colour_red_blue_black <- colour_ramp(
+  list("red", "magenta", "blue", "black"),
+  collapse_red_green = TRUE
+)
